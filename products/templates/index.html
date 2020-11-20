@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Products</h1>
+    <div class="row">
+        {% for product in products%}
+            <div class="col">
+            <!-- Go to getbootstrap.com Documents -> Components -> Cards-->
+            <div class="card" style="width: 18rem;">
+                <img src="{{product.image_urls}}" class="card-img-top" alt="..."> <!-- src = "image of card" -->
+                <div class="card-body">
+                    <h5 class="card-title">{{product.name}}</h5><!-- title of card-->
+                    <p class="card-text">${{product.price}}</p><!--  text of card-->
+                    <a href="#" class="btn btn-primary">Add to Cart</a><!--text for button of thr card-->
+                </div>
+            <!-- Go to getbootstrap.com Documents -> Components -> Cards-->
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+{% endblock  %}
