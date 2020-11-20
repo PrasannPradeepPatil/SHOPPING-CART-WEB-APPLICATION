@@ -1,6 +1,6 @@
 # WEB-APPLICATION
 ***ABOUT THE PROJECT***  
-This is a simple DJANGO web application that I build to learn Django. It has 1 application called products and the admin app is used to manage my models.
+This is a simple DJANGO web application that I build to learn Django. It has 1 application called products and the admin application  is used to manage my models.
 
        
 
